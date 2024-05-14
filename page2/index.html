@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
     <div
@@ -76,8 +76,8 @@
             </li>
           </ul>
         </div>
-        <div class="container_right">
-          <div>
+        <div class="container__right">
+          <div class="container__right__wrap">
             <div class="container__right-profile">
               <img
                 src="../public/asset/Ellipse 93.png"
@@ -96,13 +96,20 @@
               </div>
               <div>
                 <label for>性別</label>
-                <div class="container__right__radio--gender">
-                  <input type="radio" name="gender">
-                  <label for="html">男性</label><br>
-                  <input type="radio" name="gender">
-                  <label for="html">女性</label><br>
-                  <input type="radio" name="gender">
-                  <label for="html">その他・未回答</label><br>
+                <div class="container__right__radio--gender"
+                  style="display: flex;">
+                  <div>
+                    <input type="radio" name="gender">
+                    <label for="html">男性</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="gender">
+                    <label for="html">女性</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="gender">
+                    <label for="html">その他・未回答</label>
+                  </div>
                 </div>
               </div>
 
@@ -125,6 +132,36 @@
 
               <div>
                 <label for>お名前（必須）</label>
+                <div>
+                  <input type="text" name id class="input-text">
+                </div>
+              </div>
+
+              <div>
+                <label for>お名前（必須）</label>
+                <div>
+                  <select name id>
+                    <option value></option>
+                    <option value></option>
+                    <option value></option>
+                    <option value></option>
+                    <option value></option>
+                  </select>
+                </div>
+                <div>
+                  <select name id>
+                    <option value></option>
+                    <option value></option>
+                    <option value></option>
+
+                  </select>
+                </div>
+                <div>
+                  <select name id>
+                    <option value></option>
+
+                  </select>
+                </div>
                 <div>
                   <input type="text" name id class="input-text">
                 </div>

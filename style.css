@@ -269,3 +269,24 @@ p {
   margin: 0;
   padding-bottom: 5px;
 }
+
+
+/* page2s */
+
+.input-text {
+  width: 100%;
+  height: 48px;
+  margin-right: 10%;
+  
+}
+
+.container__right__wrap{
+ 
+  margin-right: 20%;
+
+};
+
+/* 
+.container__right__radio--gender{
+  display: flex;
+} */
