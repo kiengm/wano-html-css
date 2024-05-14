@@ -1,6 +1,14 @@
+* {
+  /* { reset css */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
+  height: 90px;
   box-shadow: 0 6px 6px -6px rgb(0 0 0 / 50%);
 }
 
@@ -19,10 +27,6 @@
   margin-top: 70px;
 }
 
-.container__left {
-  width: 30%;
-}
-
 .header .header__right ul {
   display: flex;
   justify-items: center;
@@ -33,6 +37,12 @@ li {
   cursor: pointer;
 }
 
+/* .header__right ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
 .header__right li {
   margin: 0;
   padding: 0;
@@ -42,11 +52,36 @@ li {
   align-items: center;
 }
 
+.avatar {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  top: 20px;
+  left: 990px;
+}
+
+.container__left {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  top: 0;
+}
+
 .container__left li {
   height: 40px;
   width: 150px;
   font-size: 16px;
   font-weight: 700;
+}
+
+.container__left ul {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0
 }
 
 .container__left--top {
@@ -55,13 +90,6 @@ li {
 
 .container__left span {
   margin-left: 2px;
-}
-.avatar {
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  top: 20px;
-  left: 990px;
 }
 
 .header__right-button {
@@ -101,6 +129,7 @@ li {
 .container {
   display: flex;
 }
+
 .container__right-profile {
   display: flex;
   flex-direction: column;
@@ -127,6 +156,7 @@ li {
   gap: 50px;
   margin-top: 50px;
 }
+
 .container__right__info__block-bottom-filed {
   display: flex;
   width: 50%;
@@ -171,6 +201,7 @@ li {
   justify-content: center;
   align-items: center;
 }
+
 .container__right__button {
   width: 350px;
   height: 60px;
@@ -194,6 +225,7 @@ li {
   gap: 30px;
   margin-top: 130px;
 }
+
 p {
   color: #ffffff;
   margin-left: 3%;
@@ -201,6 +233,7 @@ p {
   font-size: 20px;
   margin-top: 20px;
 }
+
 .footer_content {
   display: flex;
   gap: 10px;
@@ -225,6 +258,7 @@ p {
   justify-content: center;
   /* align-self: flex-end; */
 }
+
 .container__label {
   display: grid;
   gap: 10px;
