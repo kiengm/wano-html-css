@@ -377,3 +377,10 @@ p {
   justify-content: center;
   /* align-self: flex-end; */
 }
+
+.noficaion__popup {
+  width: 50px;
+  height: 100px;
+  background-color: rebeccapurple;
+  visibility: hidden;
+}
