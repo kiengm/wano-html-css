@@ -176,9 +176,10 @@ li {
 
 .container__right-profile-info {
   display: flex;
+  justify-content: center;
   align-items: center;
-  margin-top: 20px;
-  gap: 20px;
+  padding-top: 20px;
+  position: relative;
 
 }
 
@@ -187,10 +188,20 @@ li {
   align-items: center;
   width: 40px;
   height: 40px;
-  top: 275px;
-  left: 645px;
+  top: 10px;
+  left: -60px;
   gap: 0px;
   opacity: 0px;
+  position: absolute;
+
+}
+
+.container__right-profile-info span{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 
 }
 
@@ -218,7 +229,6 @@ li {
 
 .container__right__info-name-filed {
   border-bottom: 0.5px rgb(8, 175, 226) solid;
-  margin-top: 40px;
   display: flex;
 }
 
@@ -377,4 +387,16 @@ p {
   width: 100%;
   display: flex;
   gap: 30px;
+}
+.container__right__button__element{
+  position: relative;
+  width: 100% ;
+}
+
+.container__right__button__element__img{
+  position: absolute;
+  top: 0x;
+ left: 60px; 
+  
+ 
 }
