@@ -130,6 +130,10 @@ li {
   display: flex;
 }
 
+.container__right {
+  padding: 20px 10% 0 0;
+}
+
 .container__right-profile {
   display: flex;
   flex-direction: column;
@@ -276,17 +280,46 @@ p {
 .input-text {
   width: 100%;
   height: 48px;
-  margin-right: 10%;
-  
+  /* margin-right: 10%; */
+  border: 1px #BFC4D3 solid;
+  border-radius: 5px;
+
 }
 
-.container__right__wrap{
- 
+.container__right__wrap {
+
   margin-right: 20%;
+  width: 100%;
 
-};
+}
 
-/* 
-.container__right__radio--gender{
+.container__right__info {
+  display: grid;
+  gap: 50px;
+}
+
+.container__right__info__name--input {
   display: flex;
-} */
+  gap: 16px
+}
+
+
+.container__right__checkbox {
+  display: flex;
+}
+
+.container__right__radio {
+  width: 100%;
+
+}
+
+.container__right__radio--gender {
+  display: flex;
+  gap: 30px;
+}
+
+.container__right__checkbox {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+}

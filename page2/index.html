@@ -1,53 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../style.css" />
-  </head>
-  <body>
-    <div
-      class="wrap"
-      style="
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="wrap" style="
         display: grid;
-        min-height: 200vh;
+        min-height: 100vh;
         grid-template-rows: auto 1fr auto;
         position: relative;
       ">
-      <div
-        class="header"
-        style="position: sticky; top: 0; z-index: 1000; background-color: white">
-        <div
-          style="
+    <div class="header" style="position: sticky; top: 0; z-index: 1000; background-color: white">
+      <div style="
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
           ">
-          <b
-            style="color: #4c7df0; font-size: 18px; font-weight: 600">Hanacoの業界特化型オンライン通訳</b>
-        </div>
-
-        <div class="header__right">
-          <ul style="margin-left: 20px">
-            <li>
-              <div class="header__right__using">
-                <img src="../public//asset/Group 52.png" alt />
-                <span>ご利用方法</span>
-              </div>
-            </li>
-            <li><img src="../public//asset//Group 852.png" alt /></li>
-            <li><img src="../public/asset//Group 851.png" alt /></li>
-            <li>
-              <img src="../public/asset/Ellipse 93.png" alt class="avatar" />
-            </li>
-          </ul>
-
-          <button class="header__right-button">企業の方はこちら</button>
-        </div>
+        <b style="color: #4c7df0; font-size: 18px; font-weight: 600">Hanacoの業界特化型オンライン通訳</b>
       </div>
-      <div class="container">
+
+      <div class="header__right">
+        <ul style="margin-left: 20px">
+          <li>
+            <div class="header__right__using">
+              <img src="../public//asset/Group 52.png" alt />
+              <span>ご利用方法</span>
+            </div>
+          </li>
+          <li onclick="loadNotification()" id="noti"><img src="../public//asset//Group 852.png" alt /></li>
+          <li><img src="../public/asset//Group 851.png" alt /></li>
+          <li>
+            <img src="../public/asset/Ellipse 93.png" alt class="avatar" />
+          </li>
+        </ul>
+
+        <button class="header__right-button" style="outline: none;">企業の方はこちら</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="container-wrap">
         <div class="container__left">
           <ul>
             <li class="container__left--top">
@@ -79,25 +76,30 @@
         <div class="container__right">
           <div class="container__right__wrap">
             <div class="container__right-profile">
-              <img
-                src="../public/asset/Ellipse 93.png"
-                alt />
+              <img src="../public/asset/Ellipse 93.png" alt />
               <div class="container__right-profile-info">
                 <button>プロフィール写真を変更</button>
               </div>
             </div>
             <div class="container__right__info">
-              <div>
-                <label for>お名前（必須）</label>
-                <div>
+              <div class="container__right__info__name">
+                <div class="container__right__info__label">
+                  <div class="container__right__info__block-bottom-padding"></div>
+                  <label for>お名前（必須）</label>
+                </div>
+
+                <div class="container__right__info__name--input">
                   <input type="text" name id class="input-text">
                   <input type="text" name id class="input-text">
                 </div>
               </div>
-              <div>
-                <label for>性別</label>
-                <div class="container__right__radio--gender"
-                  style="display: flex;">
+              <div class="container__right__radio">
+                <div class="container__right__info__label">
+                  <div class="container__right__info__block-bottom-padding"></div>
+                  <label for>性別</label>
+                </div>
+
+                <div class="container__right__radio--gender">
                   <div>
                     <input type="radio" name="gender">
                     <label for="html">男性</label>
@@ -114,75 +116,121 @@
               </div>
 
               <div>
-                <div><label for>メールアドレス（必須）</label>
-                  <span>※公開されません</span></div>
-
-                <div>
+                <div class="container__right__info__label">
+                  <div class="container__right__info__block-bottom-padding"></div>
+                  <label for>メールアドレス（必須）</label>
+                  <span>※公開されません</span>
+                </div>
+                <div class="container__right__info__input">
                   <input type="text" name id class="input-text">
                 </div>
               </div>
               <div>
-                <div><label for>メールアドレス（必須）</label>
-                  <span>※公開されません</span></div>
-
-                <div>
-                  <input type="text" name id class="input-text">
+                <div class="container__right__info__label">
+                  <div class="container__right__info__block-bottom-padding"></div>
+                  <label for>メールアドレス（必須）</label>
+                  <span>※公開されません</span>
                 </div>
-              </div>
 
-              <div>
-                <label for>お名前（必須）</label>
                 <div>
                   <input type="text" name id class="input-text">
                 </div>
               </div>
 
               <div>
-                <label for>お名前（必須）</label>
-                <div>
-                  <div> <input type="checkbox" name="gender">
-                    <label for="html">女性</label>
-                  </div>
-                  <div> <input type="checkbox" name="gender">
-                    <label for="html">女性</label>
-                  </div>
-                  <div> <input type="checkbox" name="gender">
-                    <label for="html">女性</label>
-                  </div>
-                  <div> <input type="checkbox" name="gender">
-                    <label for="html">女性</label>
-                  </div>
-                  <div> <input type="checkbox" name="gender">
-                    <label for="html">女性</label>
-                  </div>
+                <div class="container__right__info__label">
+                  <div class="container__right__info__block-bottom-padding"></div>
+                  <label for>母国語</label>
                 </div>
+
                 <div>
-                  <div> <input type="checkbox" name="gender">
-                    <label for="html">女性</label>
-                  </div>
-                  <div> <input type="checkbox" name="gender">
-                    <label for="html">女性</label>
-                  </div>
-                  <div> <input type="checkbox" name="gender">
-                    <label for="html">女性</label>
-                  </div>
+                  <input type="text" name id class="input-text">
                 </div>
-                <div>
-                  <div> <input type="checkbox" name="gender">
-                    <label for="html">女性</label>
+              </div>
+
+              <div>
+
+                <div class="container__right__wrap__checkbox">
+                  <div class="container__right__info__label">
+                    <div class="container__right__info__block-bottom-padding"></div>
+                    <label for>通話可能言語（必須）</label>
                   </div>
 
-                  </select>
+                  <div class="container__right__checkbox">
+                    <div class="container__right__checkbox__element"> <input type="checkbox" name="gender">
+                      <label for="html">英語</label>
+                    </div>
+                    <div class="container__right__checkbox__element"> <input type="checkbox" name="gender">
+                      <label for="html">中国語</label>
+                    </div>
+                    <div class="container__right__checkbox__element"> <input type="checkbox" name="gender">
+                      <label for="html">韓国語</label>
+                    </div>
+                    <div class="container__right__checkbox__element"> <input type="checkbox" name="gender">
+                      <label for="html">イタリア語</label>
+                    </div>
+                    <div class="container__right__checkbox__element"> <input type="checkbox" name="gender">
+                      <label for="html">フランス語</label>
+                    </div>
+                    <div class="container__right__checkbox__element"> <input type="checkbox" name="gender">
+                      <label for="html">スペイン語</label>
+                    </div>
+                  </div>
+
+                  <div class="container__right__checkbox">
+                    <div class="container__right__checkbox__element">
+                      <input type="checkbox" name="gender">
+                      <label for="html">ドイツ語</label>
+                    </div>
+                    <div class="container__right__checkbox__element">
+                      <input type="checkbox" name="gender">
+                      <label for="html">タイ語</label>
+                    </div>
+                    <div class="container__right__checkbox__element">
+                      <input type="checkbox" name="gender">
+                      <label for="html">ポルトガル語</label>
+                    </div>
+                  </div>
+                  <div class="container__right__checkbox__element">
+                    <input type="checkbox" name="gender">
+                    <label for="html">その他</label>
+                  </div>
+                  <div>
+                    <input type="text" name id class="input-text">
+                  </div>
+                </div>
+
+              </div>
+
+              <div>
+                <div class="container__right__info__label">
+                  <div class="container__right__info__block-bottom-padding">
+                  </div>
+                  <label for>お名前（必須）</label>
                 </div>
                 <div>
                   <input type="text" name id class="input-text">
+                </div>
+              </div>
+              <div>
+                <div class="container__right__info__label">
+                  <div class="container__right__info__block-bottom-padding"></div>
+                  <label for>自己紹介</label>
+                </div>
+
+                <div>
+                  <textarea></textarea>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
       </div>
-      <!-- <div class="footer">
+      <div class="container__wrap__button">
+        <button class="container__right__button">プロフィールを編集する</button>
+      </div>
+      <div class="footer">
         <p>Hanacoの業界特化型オンライン通訳</p>
         <div class="footer_content footer__content--medium">
           <b>発注者の方</b>
@@ -207,7 +255,8 @@
           <div class="footer__padding"></div>
           <b>プライバシーポリシー</b>
         </div>
-      </div> -->
+      </div>
     </div>
-  </body>
+</body>
+
 </html>
